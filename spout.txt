@@ -1,0 +1,609 @@
+7731 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  o.a.s.d.executor - Opening spout TwitterSampleSpout:(2)
+7733 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - Opened
+7733 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - Opened2
+7733 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  topic = raw_data
+7733 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - Opened3 : TwitterSampleSpout-2
+7857 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.u.VerifiableProperties - Verifying properties
+7878 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.u.VerifiableProperties - Property auto.commit.interval.ms is overridden to 10000
+7878 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.u.VerifiableProperties - Property consumer.id is overridden to 2
+7878 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.u.VerifiableProperties - Property consumer.timeout.ms is overridden to 10000
+7879 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.u.VerifiableProperties - Property group.id is overridden to testConsumer
+7879 [Thread-18-TwitterSampleSpout-executor[2 2]] WARN  k.u.VerifiableProperties - Property key.deserializer is not valid
+7880 [Thread-18-TwitterSampleSpout-executor[2 2]] WARN  k.u.VerifiableProperties - Property value.deserializer is not valid
+7880 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.u.VerifiableProperties - Property zookeeper.connect is overridden to localhost:2181
+7880 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.u.VerifiableProperties - Property zookeeper.session.timeout.ms is overridden to 10000
+7880 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.u.VerifiableProperties - Property zookeeper.sync.time.ms is overridden to 10000
+7918 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], Connecting to zookeeper instance at localhost:2181
+7957 [Thread-18-TwitterSampleSpout-executor[2 2]-EventThread] INFO  o.I.z.ZkClient - zookeeper state changed (SyncConnected)
+7964 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], starting auto committer every 10000 ms
+7968 [Thread-18-TwitterSampleSpout-executor[2 2]] WARN  k.c.AppInfo$ - Can't read Kafka version from MANIFEST.MF. Possible cause: java.lang.NullPointerException
+7969 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  o.a.s.d.executor - Opened spout TwitterSampleSpout:(2)
+7971 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  o.a.s.d.executor - Activating spout TwitterSampleSpout:(2)
+7971 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - Activated
+8002 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], begin registering consumer testConsumer_2 in ZK
+8053 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], end registering consumer testConsumer_2 in ZK
+8077 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], begin rebalancing consumer testConsumer_2 try #0
+8251 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ConsumerFetcherManager - [ConsumerFetcherManager-1675090669172] Stopping leader finder thread
+8252 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ConsumerFetcherManager - [ConsumerFetcherManager-1675090669172] Stopping all fetchers
+8252 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ConsumerFetcherManager - [ConsumerFetcherManager-1675090669172] All connections stopped
+8253 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], Cleared all relevant queues for this fetcher
+8254 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], Cleared the data chunks in all the consumer message iterators
+8254 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], Committing all offsets after clearing the fetcher queues
+8255 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], Releasing partition ownership
+8299 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.RangeAssignor - Consumer testConsumer_2 rebalancing the following partitions: ArrayBuffer(0, 1, 2) for topic raw_data with consumers: List(testConsumer_2-0)
+8301 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.RangeAssignor - testConsumer_2-0 attempting to claim partition 0
+8304 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.RangeAssignor - testConsumer_2-0 attempting to claim partition 1
+8304 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.RangeAssignor - testConsumer_2-0 attempting to claim partition 2
+8330 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], testConsumer_2-0 successfully owned partition 1 for topic raw_data
+8333 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], testConsumer_2-0 successfully owned partition 2 for topic raw_data
+8336 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], testConsumer_2-0 successfully owned partition 0 for topic raw_data
+8361 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], Consumer testConsumer_2 selected partitions : raw_data:0: fetched offset = 0: consumed offset = 0,raw_data:1: fetched offset = 921: consumed offset = 921,raw_data:2: fetched offset = 0: consumed offset = 0
+8372 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  k.c.ZookeeperConsumerConnector - [testConsumer_2], end rebalancing consumer testConsumer_2 try #0
+8379 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8379 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8379 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - Started Reader Thread TwitterSampleSpout-2 reader
+8481 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8481 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8494 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8494 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8495 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8495 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8496 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8498 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8499 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8499 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8499 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8499 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8500 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8501 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8502 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8502 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8502 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8502 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8502 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8502 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8503 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8504 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8504 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8504 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8504 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8504 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8504 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8505 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8506 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8506 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8508 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8509 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8509 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8509 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8509 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8510 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8510 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8510 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8510 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8510 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8510 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8510 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8510 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8511 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8511 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8511 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8511 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8511 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8511 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8511 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8511 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8512 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8513 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8513 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8513 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8513 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8513 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8513 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8513 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8513 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8514 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8515 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8515 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8515 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8515 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+8515 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+8515 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8515 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8616 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8616 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8718 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8718 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8819 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8819 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+8921 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+8921 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9022 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9022 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9079 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+9079 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+9079 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9079 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9181 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9181 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9282 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9282 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9384 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9384 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9485 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9486 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9587 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9587 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9688 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9688 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9790 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9790 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9891 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9891 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+9993 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+9993 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10087 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+10088 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+10088 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10088 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10190 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10190 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10292 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10292 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10393 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10393 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10494 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10494 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10596 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10596 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10697 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10698 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10799 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10799 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+10901 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+10901 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11002 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11002 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11089 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+11090 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+11090 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11090 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11192 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11192 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11294 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11294 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11396 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11396 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11497 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11599 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11599 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11700 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11700 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11803 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11803 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+11904 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+11904 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12006 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12006 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12092 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+12092 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+12093 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12093 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12194 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12194 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12296 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12296 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12397 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12397 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12499 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12499 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12601 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12601 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12702 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12702 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12804 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12804 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+12905 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+12905 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13007 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13007 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13098 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+13099 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+13099 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13099 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13200 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13201 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13303 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13303 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13404 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13404 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13506 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13506 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13607 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13607 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13709 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13709 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13810 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13810 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+13912 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+13912 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14013 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14013 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14098 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+14098 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+14098 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14098 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14200 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14200 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14301 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14301 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14403 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14404 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14506 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14507 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14608 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14608 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14710 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14710 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14811 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14811 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+14913 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+14913 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15014 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15014 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15103 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+15103 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+15104 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15104 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15205 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15205 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15306 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15306 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15408 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15408 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15509 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15509 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15610 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15611 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15713 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15713 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15814 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15814 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+15916 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+15916 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16017 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16017 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16110 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+16110 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+16110 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16110 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16211 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16212 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16313 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16313 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16415 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16415 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16516 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16516 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16618 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16618 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16719 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16719 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16821 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16821 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+16922 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+16923 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17024 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17024 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17111 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+17111 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+17111 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17111 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17213 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17213 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17314 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17315 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17416 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17416 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17519 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17519 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17623 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17623 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17730 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17730 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17831 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17831 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+17935 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+17935 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18037 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18037 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18120 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+18121 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+18121 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18121 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18222 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18222 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18327 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18327 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18429 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18429 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18532 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18532 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18634 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18635 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18737 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18737 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18839 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18839 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+18944 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+18944 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19047 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19047 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19118 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+19118 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+19118 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19119 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19220 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19221 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19322 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19322 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19424 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19424 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19526 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19526 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19629 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19630 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19731 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19731 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19836 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19836 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+19937 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+19938 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20039 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20039 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20116 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+20116 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+20117 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20117 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20218 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20218 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20322 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20322 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20423 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20423 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20524 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20524 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20626 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20626 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20727 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20727 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20829 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20829 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+20930 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+20930 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21032 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21032 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21119 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+21119 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+21119 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21119 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21222 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21222 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21325 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21325 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21427 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21427 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21529 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21529 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21632 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21632 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21734 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21735 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21837 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21837 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+21942 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+21943 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22044 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22044 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22119 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+22119 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+22120 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22120 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22221 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22221 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22323 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22323 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22424 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22424 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22526 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22526 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22627 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22628 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22729 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22729 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22830 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22830 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+22932 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+22932 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23033 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23033 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23120 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+23120 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+23120 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23120 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23223 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23223 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23324 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23324 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23426 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23427 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23529 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23529 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23631 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23631 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23732 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23732 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23834 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23834 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+23937 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+23937 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+24039 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+24039 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+24123 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - streams iterator has next
+24123 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.TwitterSampleSpout - method : processMessage
+24123 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+24123 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+24225 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+24225 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+24328 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+24328 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+24433 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout - nextTuple called
+24434 [Thread-18-TwitterSampleSpout-executor[2 2]] INFO  c.t.KafkaSpout -  Method : checkReaderRunning
+24535 [Thread-18-TwitterSampleSpout-executor[2 2]] 
